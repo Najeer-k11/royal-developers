@@ -56,7 +56,7 @@ export default function Header() {
               <span>Founder</span>
               <span>Our Story</span>
             </span>
-            <img src={founder.thumb} alt="Founder of Royal Developers" width="192" height="192" />
+            <img src={founder.thumb} alt={`${founder.name}, Founder of Royal Developers`} width="192" height="192" />
           </a>
 
           <button

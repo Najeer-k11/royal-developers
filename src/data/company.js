@@ -67,8 +67,7 @@ export const about = {
 };
 
 export const founder = {
-  // Replace with the founder's real name.
-  name: '[Founder Name]',
+  name: 'Raja Laxman',
   designation: 'Founder, Royal Developers',
   portrait: founderPortrait,
   thumb: founderThumb,

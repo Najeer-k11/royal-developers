@@ -9,7 +9,7 @@ export default function Founder() {
         <Reveal className="founder__portrait">
           <img
             src={founder.portrait}
-            alt={`Portrait of the founder of Royal Developers`}
+            alt={`Portrait of ${founder.name}, Founder of Royal Developers`}
             width="960"
             height="960"
             loading="lazy"

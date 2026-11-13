@@ -22,7 +22,7 @@ All content lives in `src/data/` — no component changes are needed.
 | `gallery.js` | Gallery photographs and their categories |
 | `images.js` | How photos are loaded (read the notes at the top) |
 
-Anything written in `[square brackets]` is a placeholder to replace, e.g. `[Founder Name]`, `[Phone number]`.
+Anything written in `[square brackets]` is a placeholder to replace, e.g. `[Phone number]`, `[Email address]`.
 
 ### Photographs
 
