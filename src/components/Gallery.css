@@ -1,0 +1,87 @@
+.gallery h2 em {
+  color: var(--gold-deep);
+}
+
+/* Masonry via CSS columns — each image keeps its natural proportions. */
+.gallery__grid {
+  columns: 2;
+  column-gap: clamp(0.75rem, 1.6vw, 1.5rem);
+}
+
+.gallery__grid li {
+  break-inside: avoid;
+  margin-bottom: clamp(0.75rem, 1.6vw, 1.5rem);
+  animation: fade-up 0.7s var(--ease-out) both;
+  animation-delay: calc(var(--i) * 50ms);
+}
+
+.gallery__item {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.gallery__item .picture img {
+  transition:
+    opacity 0.7s var(--ease),
+    transform 1.2s var(--ease-out);
+}
+
+.gallery__item:hover .picture img,
+.gallery__item:focus-visible .picture img {
+  transform: scale(1.04);
+}
+
+.gallery__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(21 19 15 / 0) 45%, rgb(21 19 15 / 0.72) 100%);
+  opacity: 0;
+  transition: opacity 0.45s var(--ease);
+}
+
+.gallery__caption {
+  position: absolute;
+  left: 1.25rem;
+  right: 1.25rem;
+  bottom: 1.1rem;
+  z-index: 1;
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  line-height: 1.2;
+  color: var(--ivory);
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition:
+    opacity 0.45s var(--ease),
+    transform 0.45s var(--ease-out);
+}
+
+.gallery__caption span {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--champagne);
+}
+
+.gallery__item:hover::after,
+.gallery__item:focus-visible::after,
+.gallery__item:hover .gallery__caption,
+.gallery__item:focus-visible .gallery__caption {
+  opacity: 1;
+  transform: none;
+}
+
+@media (min-width: 64em) {
+  .gallery__grid {
+    columns: 3;
+  }
+}

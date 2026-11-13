@@ -1,0 +1,48 @@
+:root {
+  /* Brand palette */
+  --ink: #15130f;
+  --charcoal: #24211b;
+  --charcoal-soft: #322e26;
+  --gold: #c9a24a;
+  --gold-deep: #856519; /* accessible gold for small text on light backgrounds */
+  --champagne: #e6d2a0;
+  --ivory: #f7f5f0;
+  --stone: #ebe7de;
+  --white: #ffffff;
+  --muted: #6e6a62;
+  --muted-on-dark: rgb(247 245 240 / 0.68);
+  --line: rgb(21 19 15 / 0.14);
+  --line-on-dark: rgb(247 245 240 / 0.16);
+  --error: #a3342a;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Manrope', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: clamp(1.0625rem, 0.98rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.8vw, 1.875rem);
+  --display-sm: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+  --display-md: clamp(2.25rem, 1.5rem + 3.2vw, 4.25rem);
+  --display-lg: clamp(2.75rem, 1.4rem + 6vw, 6.75rem);
+
+  /* Layout */
+  --gutter: clamp(1.25rem, 4.5vw, 4rem);
+  --container: 82.5rem;
+  --section-space: clamp(5rem, 11vw, 10rem);
+  --header-height: 5.75rem;
+  --header-height-compact: 4.5rem;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 60em) {
+  :root {
+    --header-height: 4.5rem;
+    --header-height-compact: 4rem;
+  }
+}
