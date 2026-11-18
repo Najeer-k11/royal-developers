@@ -1,10 +1,6 @@
 /**
  * Project portfolio data.
  *
- * Every entry below is a STRUCTURAL PLACEHOLDER. Names, locations and
- * descriptions are intentionally generic, and the photographs are stock
- * placeholders — replace them with real Royal Developers projects.
- *
  * Fields
  *   id           unique slug
  *   name         project name
@@ -31,111 +27,22 @@ export const projectFilters = [
   { id: PROJECT_STATUS.ONGOING, label: 'Ongoing' },
 ];
 
-const placeholderDetails = [
-  { label: 'Configuration', value: '[e.g. 2 & 3 BHK]' },
-  { label: 'Land area', value: '[Area]' },
-  { label: 'Units', value: '[Number]' },
-];
-
 export const projects = [
   {
-    id: 'project-01',
-    name: '[Project Name One]',
-    location: '[Locality, City]',
-    category: 'Villas',
-    status: PROJECT_STATUS.COMPLETED,
-    cover: photo('villa-pool-terrace', 'Placeholder: contemporary villa with pool terrace'),
-    description:
-      'Placeholder description. Summarise the development here — its setting, the homes it offers and the thinking behind its planning and design.',
-    details: placeholderDetails,
-    gallery: [
-      photo('int-living-open', 'Placeholder: open-plan living area'),
-      photo('int-bedroom', 'Placeholder: bedroom interior'),
-      photo('villa-poolside', 'Placeholder: poolside elevation'),
-    ],
-  },
-  {
-    id: 'project-02',
-    name: '[Project Name Two]',
-    location: '[Locality, City]',
-    category: 'Residential',
-    status: PROJECT_STATUS.COMPLETED,
-    cover: photo('ext-dark-apartments', 'Placeholder: modern apartment building'),
-    description:
-      'Placeholder description. Describe the apartments, the amenities and what makes this address a comfortable, well-connected place to live.',
-    details: placeholderDetails,
-    gallery: [
-      photo('ext-balconies', 'Placeholder: balcony facade detail'),
-      photo('int-living-warm', 'Placeholder: furnished living room'),
-    ],
-  },
-  {
-    id: 'project-03',
-    name: '[Project Name Three]',
-    location: '[Locality, City]',
-    category: 'Commercial',
+    id: 'nvb-aero-city',
+    name: 'NVB Aero City',
+    location: 'Madhurapudi, Opp. Airport, Rajahmundry',
+    category: 'Plotted Development',
     status: PROJECT_STATUS.ONGOING,
-    cover: photo('site-cranes', 'Placeholder: building under construction with tower cranes'),
+    cover: photo('aero-city-gate', 'Entrance gate of NVB Aero City, Rajahmundry'),
     description:
-      'Placeholder description. Outline the scope of this ongoing development, its current stage of construction and what it will offer on completion.',
+      'A RUDA-approved gated layout opposite Rajahmundry Airport with 580 plots — open plots, 2 BHK homes and 3 BHK villas. Includes CC roads, drainage, street lighting, drinking water connections, a children’s park and 24/7 security.',
     details: [
-      { label: 'Current stage', value: '[e.g. Structure in progress]' },
-      { label: 'Land area', value: '[Area]' },
-      { label: 'Expected handover', value: '[Timeline]' },
+      { label: 'Total plots', value: '580' },
+      { label: 'Homes', value: '3 BHK villas, 2 BHK houses, open plots' },
+      { label: 'Plot sizes', value: '167, 183 & 220 sq. yards' },
+      { label: 'Approval', value: 'RUDA approved' },
     ],
-    gallery: [
-      photo('site-slab', 'Placeholder: slab work in progress'),
-      photo('plan-drawings', 'Placeholder: architectural drawings being reviewed'),
-      photo('ext-towers', 'Placeholder: commercial towers'),
-    ],
-  },
-  {
-    id: 'project-04',
-    name: '[Project Name Four]',
-    location: '[Locality, City]',
-    category: 'Villas',
-    status: PROJECT_STATUS.COMPLETED,
-    cover: photo('home-timber-facade', 'Placeholder: contemporary home with timber facade'),
-    description:
-      'Placeholder description. Introduce the homes, their layouts and the quality of materials and finishes used throughout.',
-    details: placeholderDetails,
-    gallery: [
-      photo('home-brick-lawn', 'Placeholder: residence with landscaped lawn'),
-      photo('int-lounge', 'Placeholder: bright lounge interior'),
-    ],
-  },
-  {
-    id: 'project-05',
-    name: '[Project Name Five]',
-    location: '[Locality, City]',
-    category: 'Residential',
-    status: PROJECT_STATUS.ONGOING,
-    cover: photo('site-rebar', 'Placeholder: reinforcement work on a construction site'),
-    description:
-      'Placeholder description. Share progress on this residential development — the work completed so far and the milestones ahead.',
-    details: [
-      { label: 'Current stage', value: '[e.g. Foundation complete]' },
-      { label: 'Configuration', value: '[e.g. 2 & 3 BHK]' },
-      { label: 'Expected handover', value: '[Timeline]' },
-    ],
-    gallery: [
-      photo('site-survey', 'Placeholder: site team reviewing foundation work'),
-      photo('ext-brick-residences', 'Placeholder: residential block exterior'),
-    ],
-  },
-  {
-    id: 'project-06',
-    name: '[Project Name Six]',
-    location: '[Locality, City]',
-    category: 'Residential',
-    status: PROJECT_STATUS.COMPLETED,
-    cover: photo('villa-white-modern', 'Placeholder: white modern residence'),
-    description:
-      'Placeholder description. Describe the character of this completed development and the lifestyle it was designed to support.',
-    details: placeholderDetails,
-    gallery: [
-      photo('villa-courtyard', 'Placeholder: courtyard and pool'),
-      photo('villa-glass-pavilion', 'Placeholder: glass-fronted living pavilion'),
-    ],
+    gallery: [photo('aero-city-brochure', 'NVB Aero City brochure — opposite Airport, Rajahmundry')],
   },
 ];

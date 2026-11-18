@@ -7,6 +7,7 @@
  */
 import logoMark from '../assets/brand/logo-mark.webp';
 import logoFull from '../assets/brand/logo-full.webp';
+import logoIcon from '../assets/brand/logo-icon.webp';
 import founderPortrait from '../assets/brand/founder.webp';
 import founderThumb from '../assets/brand/founder-thumb.webp';
 import { photo } from './images';
@@ -16,9 +17,10 @@ export const company = {
   tagline: 'Building Trust, Creating Lifestyles.',
   descriptor: 'Real Estate & Property Development',
   shortIntro:
-    'Royal Developers is a real estate and property development company committed to thoughtfully planned spaces, honest dealings and construction quality that stands the test of time.',
+    'With 23 years of experience, Royal Developers develops ventures, sells plots and land, and builds individual houses and duplex homes in Rajahmundry — with honest dealings and clear pricing.',
   logoMark,
   logoFull,
+  logoIcon,
 };
 
 export const navigation = [
@@ -32,16 +34,16 @@ export const navigation = [
 export const hero = {
   label: 'Royal Developers',
   heading: ['Building Trust,', 'Creating Lifestyles.'],
-  text: 'We develop homes and properties with a simple conviction: a building is only as strong as the trust behind it. Considered planning, quality construction and a transparent approach — from the first conversation to the final handover.',
+  text: 'For 23 years, we have helped families buy land and build homes they can trust. Honest pricing, good construction and support at every step.',
   image: photo('hero-dusk-residence', 'Contemporary residence illuminated at dusk'),
 };
 
 export const about = {
   eyebrow: 'About Royal Developers',
   heading: ['More Than Buildings.', 'We Build Trust.'],
-  lead: 'Royal Developers is a real estate and property development company shaped by one belief — that a home is among the most important decisions a family will ever make, and it deserves a developer who treats it that way.',
+  lead: 'With 23 years of experience in Rajahmundry, Royal Developers is built on one belief — a home is among the most important decisions a family will ever make, and it deserves a developer who treats it that way.',
   paragraphs: [
-    'Every development we take on begins with careful planning and an honest understanding of what people need from the places they live and work in. We focus on sound construction, sensible layouts and details that continue to matter long after the keys are handed over.',
+    'We develop ventures and handle property and land sales, and we build individual houses and duplex homes — with clear, per-square-foot pricing so you know exactly what you are paying for.',
     'Our approach is deliberately straightforward: clear communication, quality that can be seen and verified, and commitments we intend to keep. It is how we aim to earn trust — one project, and one customer, at a time.',
   ],
   image: photo('arch-white-facade', 'Sculptural white architectural facade against the sky'),
@@ -126,17 +128,19 @@ export const contact = {
   text: 'Looking for a home, exploring an investment or planning a development? Share your property requirements and we will be glad to discuss them with you.',
 
   // `value` is used to build the link (tel: / mailto:). Leave empty until known.
-  phone: { label: '[Phone number]', value: '' }, // e.g. label '+00 00000 00000', value '+000000000000'
-  email: { label: '[Email address]', value: '' }, // e.g. value 'info@example.com'
+  // NOTE: number as supplied by the client has 11 digits after +91 (Indian
+  // mobiles have 10) — confirm with the client.
+  phone: { label: '+91 94932288774', value: '+9194932288774' },
+  email: { label: 'royaldevelopersrjy@gmail.com', value: 'royaldevelopersrjy@gmail.com' },
   address: {
-    lines: ['[Office address line 1]', '[Area, City, PIN code]'],
+    lines: ['Danavaipeta, Beside SBI', 'Rajahmundry, Andhra Pradesh'],
     mapUrl: '', // optional Google Maps link
   },
-  hours: '[Office hours]',
+  hours: '10 AM – 8 PM',
 
   // WhatsApp number in international format, digits only (no +, spaces or dashes).
   whatsapp: {
-    number: '',
+    number: '9194932288774', // see phone note above
     message: 'Hello Royal Developers, I would like to know more about your projects.',
   },
 

@@ -35,24 +35,25 @@ export default function Gallery() {
             </h2>
           </div>
           <p className="section-head__intro muted">
-            Completed buildings, interiors, exteriors and progress from our sites. Select any
-            photograph to view it in full.
+            Photographs from our projects. Select any photograph to view it in full.
           </p>
         </Reveal>
 
-        <div className="filters" role="group" aria-label="Filter gallery by category">
-          {categories.map((category) => (
-            <button
-              key={category}
-              type="button"
-              className="filters__btn"
-              aria-pressed={filter === category}
-              onClick={() => changeFilter(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        {categories.length > 2 && (
+          <div className="filters" role="group" aria-label="Filter gallery by category">
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                className="filters__btn"
+                aria-pressed={filter === category}
+                onClick={() => changeFilter(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        )}
 
         {visible.length === 0 ? (
           <div className="empty-state" role="status">

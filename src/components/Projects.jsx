@@ -35,29 +35,30 @@ export default function Projects() {
           <div>
             <p className="eyebrow">Our Projects</p>
             <h2 id="projects-title" className="display-md">
-              Completed works &amp; <em>ongoing developments.</em>
+              Our <em>developments.</em>
             </h2>
           </div>
           <p className="section-head__intro muted">
-            A portfolio of the developments we have delivered and those currently taking shape.
             Select a project to see its details and photographs.
           </p>
         </Reveal>
 
-        <div className="filters" role="group" aria-label="Filter projects by status">
-          {projectFilters.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              className="filters__btn"
-              aria-pressed={filter === item.id}
-              onClick={() => setFilter(item.id)}
-            >
-              {item.label}
-              <span className="filters__count">{String(countFor(item.id)).padStart(2, '0')}</span>
-            </button>
-          ))}
-        </div>
+        {projects.length > 1 && (
+          <div className="filters" role="group" aria-label="Filter projects by status">
+            {projectFilters.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                className="filters__btn"
+                aria-pressed={filter === item.id}
+                onClick={() => setFilter(item.id)}
+              >
+                {item.label}
+                <span className="filters__count">{String(countFor(item.id)).padStart(2, '0')}</span>
+              </button>
+            ))}
+          </div>
+        )}
 
         {visible.length === 0 ? (
           <div className="empty-state" role="status">

@@ -35,7 +35,11 @@ export default function Header() {
     >
       <div className="header__bar container">
         <a className="header__logo" href="#home" onClick={closeMenu} aria-label={`${company.name} — home`}>
-          <img src={company.logoMark} alt={company.name} width="540" height="361" />
+          <img src={company.logoIcon} alt="" width="540" height="282" />
+          <span className="header__logo-text">
+            <span>Royal</span>
+            <span>Developers</span>
+          </span>
         </a>
 
         <nav className="header__nav" aria-label="Primary">

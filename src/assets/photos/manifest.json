@@ -1,4 +1,6 @@
 {
+  "aero-city-gate": { "width": 800, "height": 385 },
+  "aero-city-brochure": { "width": 800, "height": 1054 },
   "hero-dusk-residence": { "width": 2200, "height": 1467 },
   "arch-white-facade": { "width": 1600, "height": 1067 },
   "ext-dark-apartments": { "width": 1600, "height": 1067 },
