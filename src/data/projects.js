@@ -8,6 +8,7 @@
  *   category     e.g. 'Residential', 'Villas', 'Commercial', 'Plotted Development'
  *   status       PROJECT_STATUS.COMPLETED | PROJECT_STATUS.ONGOING
  *   cover        main photograph  -> photo('file-name', 'alt text')
+ *   coverPosition optional CSS object-position for the cover crop, e.g. '50% 40%'
  *   description  short summary
  *   details      optional list of { label, value } facts shown in the detail view
  *   gallery      additional photographs
@@ -34,7 +35,8 @@ export const projects = [
     location: 'Madhurapudi, Opp. Airport, Rajahmundry',
     category: 'Plotted Development',
     status: PROJECT_STATUS.ONGOING,
-    cover: photo('aero-city-gate', 'Entrance gate of NVB Aero City, Rajahmundry'),
+    cover: photo('aero-city-entrance', 'Rendering of the NVB’s Aero City entrance arch and gate'),
+    coverPosition: '50% 48%',
     description:
       'A RUDA-approved gated layout opposite Rajahmundry Airport with 580 plots — open plots, 2 BHK homes and 3 BHK villas. Includes CC roads, drainage, street lighting, drinking water connections, a children’s park and 24/7 security.',
     details: [
@@ -44,9 +46,9 @@ export const projects = [
       { label: 'Approval', value: 'RUDA approved' },
     ],
     gallery: [
-      photo('aero-city-entrance', 'Rendering of the NVB’s Aero City entrance arch and gate'),
       photo('aero-city-aerial', 'Aerial rendering of the NVB Aero City plotted layout with internal roads and entrance gate'),
       photo('villa-pool-elevation', 'Rendering of a two-storey white contemporary villa with timber soffits and a swimming pool'),
+      photo('aero-city-gate', 'Entrance gate of NVB Aero City, Rajahmundry'),
       photo('aero-city-brochure', 'NVB Aero City brochure — opposite Airport, Rajahmundry'),
     ],
   },

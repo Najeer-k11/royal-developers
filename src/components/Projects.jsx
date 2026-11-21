@@ -78,6 +78,7 @@ export default function Projects() {
                   <div className="project-card__media">
                     <Picture
                       image={project.cover}
+                      position={project.coverPosition}
                       ratio="var(--ratio)"
                       sizes={
                         slot === 'full'
