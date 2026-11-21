@@ -43,6 +43,11 @@ export const projects = [
       { label: 'Plot sizes', value: '167, 183 & 220 sq. yards' },
       { label: 'Approval', value: 'RUDA approved' },
     ],
-    gallery: [photo('aero-city-brochure', 'NVB Aero City brochure — opposite Airport, Rajahmundry')],
+    gallery: [
+      photo('aero-city-entrance', 'Rendering of the NVB’s Aero City entrance arch and gate'),
+      photo('aero-city-aerial', 'Aerial rendering of the NVB Aero City plotted layout with internal roads and entrance gate'),
+      photo('villa-pool-elevation', 'Rendering of a two-storey white contemporary villa with timber soffits and a swimming pool'),
+      photo('aero-city-brochure', 'NVB Aero City brochure — opposite Airport, Rajahmundry'),
+    ],
   },
 ];
